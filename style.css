@@ -1,0 +1,632 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(242, 242,242);
+    font-size: 16px;
+   
+    
+   
+}
+header{
+    background-image: url(img/bg.jpg);
+    
+    background-position: center;
+   
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    
+}
+
+header strong{
+    font-size:20px ;
+    
+}
+
+/* ----------------------------header------------------ */
+li{
+    list-style: none;
+}
+i{
+    color: rgba(245, 239, 239,0.7);
+}
+a{
+    text-decoration: none;
+}
+p .first{
+    background-color: transparent;
+    height: 40px;
+    width: auto;
+}
+header > p{
+    background-color: rgba(15, 15, 15,0.1);
+height: 40px;
+width: 100%;
+color: white;
+text-align: center;
+font-size: 1.6em;
+}
+header > img{
+    float:right;
+    margin-top:-60px 
+}
+.nav1 ul, .nav2 ul{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.nav1 ul li a, .nav2 ul li a{
+    color: white;
+    text-align: center;
+}
+nav{
+    width: 80%;
+    
+    margin: 0 auto;
+ 
+}
+ul{
+padding: 0;
+margin: 0;
+}
+.nav1 ul .li2{
+margin-top: 30px;
+}
+.nav1 ul .li2 i {
+    border:1px solid   rgba(245, 239, 239,0.7);
+    border-radius: 50%;
+    padding:8px; 
+}
+.nav1 ul .li3{
+    display: none;
+}
+.nav2{
+    padding:25px 0;
+}
+
+/* -------------------------------------main------------------------------- */
+.noel{
+    max-width: 100%;
+    height: auto;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+h1,h2{
+    color: rgb(145, 159, 10);
+text-align: center;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+   
+}
+ h2::after{
+    content: "";
+    display: block;
+    border-top: 1px solid rgb(150, 176, 17);
+    margin-top: -12px;
+   
+}
+h2 span {
+    background-color: white;
+   margin-left: 15px;
+}
+.bloc h2 .span {
+    background-color: white;
+    padding-left:5px ;
+    display: inline;
+   
+}
+h3{
+    font-size: 20px;
+}
+p{
+    text-align: center;
+}
+
+.tea{
+    clear: both;
+    background-color: white;
+    height:    auto;
+    padding: 10px 10px;
+    text-align: center;
+    
+    
+}
+img{
+   
+}
+
+.listtea ul{
+    display: flex;
+    justify-content: space-between; 
+ 
+    
+}
+.listtea li a {
+    text-align: center;
+    /* padding: 10px; */
+ 
+    
+
+}
+.listtea li a h5{
+    text-align: center;
+    color:rgb(119, 107, 107);
+    font-size: 20px;
+}
+article,  p{
+    color: rgb(119, 107, 107);
+}
+.infusion{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 30px 0 ;
+    padding: 0 15px;
+   
+}
+.bloc{
+    width: 30%;
+    text-align: center;
+}
+button{
+    background-color: rgb(176, 144, 103);
+    width: 200px;
+    height: 50px;
+    color: white;
+    border:none;
+    margin: 30px 0;
+    font-size: 20px;
+    
+}
+ button:hover{
+    background-color: rgba(176, 144, 103,75%);
+ }
+.bloc span{
+    display: block;
+   
+}
+/* -------------------footer----------------- */
+footer .div1 ul{
+
+    display: flex;
+    justify-content: space-around;
+}
+.footer{
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+   background-position-x: -150px;
+      background-position-y: 60px;
+    color: white;
+}
+footer .div1 ul li a span{
+    display: block;
+    margin-top: 10px;
+    
+}
+footer .div1 ul li a i{
+    font-size: 1.6em;
+}
+footer .div1 ul li {
+    font-size: 0.8em;
+    
+    
+
+}
+footer .div1 ul li{
+    text-align: center;
+}
+footer .div1{
+    background-color: rgb(145, 159, 10);
+    height: auto;
+    padding: 20px 0;
+    
+    
+}
+footer .div2 {
+
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+ footer .div2 ul li {
+    margin: 8px;
+    font-size: 0.8em;
+} 
+footer  a{
+    color: rgba(240, 234, 234,0.5);
+}
+footer img{
+    margin: 0;
+    padding: 0;
+
+}
+.div_footer{
+    text-align: center;
+    padding: 30px 15%;
+    background-color: rgba(15, 15, 15,0.2);
+    height: auto;
+}
+.para_footer,.para_footer a{
+    color: rgba(255, 255, 255,0.8);
+    font-size: 0.9em;
+}
+.para_footer{
+    margin: 0;
+    padding: 0 ;
+    text-align: center;
+}
+/* ------------------------version tablette home---------------------------- */
+ @media screen  and (max-width: 991px) {
+    .listtea ul{
+        display: flex;
+        justify-content: center;
+       flex-flow: wrap;
+       
+       
+        
+    }
+    .listtea ul li{
+        width: 50%;
+    }
+    .infusion{
+        display: flex;
+      flex-direction: column;
+        background-color: #fff;
+        margin: 30px 0 ;
+        padding: 0 15px;
+       
+    }
+    .bloc{
+        width: 100%;
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        margin: 0;
+    }
+    main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer .div1 a{
+        font-size:0.8em ;
+    }
+} 
+/* ------------------------------------version portable home---------------------------------- */
+
+@media screen and (max-width:767px) {
+    header > img{
+        
+    display: none;
+    }
+    .noel,.slider,.disparait{
+        display: none;
+    }
+    header .nav1{
+        position: relative;
+    }
+    header > p{
+       
+        font-size: 1.2em;
+        padding-top: 10px;
+        }
+    .nav1 ul, .nav2 ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+    .nav1 ul .li1{
+        margin-top: 70px;
+    }
+    .nav2 ul li{
+     
+       margin-bottom: 20px;
+     
+     
+    }
+    .fa-shopping-cart {
+        border:1px solid   rgba(245, 239, 239,0.7);
+        border-radius: 50%;
+        padding:8px; 
+    }
+    .nav1 ul .li2{
+        display: none;
+    }
+    .nav1 ul .li3{
+        display: block;
+        position:absolute;
+        border: 3px solid rgba(99, 99, 102, 0.08);
+        border-radius:0 25px 25px 0;
+        text-align: center;
+        padding: 3px 10px;
+        top:0;
+       
+        border-left: none;
+       
+       
+    }
+    .nav1 ul .li3 strong,.nav1 ul .li3 strong{
+        font-size: 1em;
+    }
+
+    footer .div1 ul{
+text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+  
+}
+footer .div1 ul li{
+     font-size: 0.8em; 
+    width: 50%;
+    padding: 0;
+    margin: 15px 0;
+
+}
+footer .div2 {
+
+    display: flex;
+   flex-flow: column ;
+   text-align: center;
+}
+main > h1{
+    display: none;
+}
+}
+/* ---------------------------------About version Ordinateur----------------------------- */
+.mainbout{
+    
+    padding: 25px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.mainbout h1{
+    text-align: left;
+    color: black;
+}
+.mainbout .article1 h2,.mainbout .article2 h2{
+    text-align: left;
+   color: rgb(150, 176, 17);
+}
+.article1 img{
+float: left;
+margin: 20px;
+}
+.article2 img{
+    float: right;
+  margin: 20px;
+  margin-bottom: 0;
+    }
+.article2,.concepte{
+    clear: both;
+}
+.petit_footer{
+    display: flex;
+    background-color: rgb(234, 239, 207);
+    justify-content: space-around;
+    margin-top: 25px;
+    
+}
+.petit_footer .foot i{
+    color: rgb(135, 158, 15);
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.petit_footer .foot h3 span{
+    display: block;
+}
+.petit_footer .foot h3 {
+    text-align: center;
+}
+.petit_footer .foot{
+    width: 30%;
+}
+article{
+    margin-top: 5px;
+}
+/* --------------------------------Abouts version tablette-------------------------- */
+@media screen  and (max-width: 991px)  {
+    .petit_footer{
+        display: flex;
+        background-color: rgb(234, 239, 207);
+        flex-direction: column;
+        margin: 10px;
+        padding: 15px;
+
+        
+    }
+    .petit_footer .foot{
+        width: 100%;
+   
+    }
+    main{
+        width: auto;
+        margin: 0;
+    }
+
+}
+@media screen and (max-width:767px) {
+    .article1 img{
+       float: none;
+       margin: 0;
+       width: 315px;
+       height: 210px;
+    
+        }
+        .article2 img{
+            float: none;
+            margin: 0;
+            width: 315px;
+            height: 172px;
+         
+             }
+      
+}
+/* -----------------------------------------------------Produit version ordinateur--------------------------------------- */
+.produit{
+    background-color: #fff;
+    padding: 25px;
+
+}
+.reference p{
+    text-align: left;
+    font-style: italic;
+}
+.avis{
+    float: right;
+    
+
+}
+.flem2{
+    display: none;
+}
+.avis i{
+color: rgb(254, 218, 22);
+padding: 3px;
+
+}
+.avis .i{
+    color: black;
+}
+.avis .mes_avis{
+    display: block;
+    color: rgb(150, 176, 17);
+}
+section{
+    clear: both;
+    
+}
+.achat{
+    float: right;
+    margin-top: 50px;
+}
+.achat .dec{
+    display: block;
+   
+  
+}
+.achat  .prix .dec {
+    text-align: right;
+}
+.achat .dec strong{
+    font-size: 1.5em;
+    color: rgb(88, 84, 84);
+  
+}
+select{
+    width: 250px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+.achat button{
+    width: 250px;
+    text-align: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.achat a{
+    text-align: right;
+    color: rgb(150, 176, 17);
+}
+.achat a i{
+    color: red;
+}
+/* ---------------------------------Produit version phone-------------------------------- */
+@media screen and (max-width:767px) {
+    .reference{
+text-align: center;
+    }
+    .flem1{
+        display: none;
+    }
+    .flem2{
+        display: block;
+        float: none;
+       
+       
+    }
+    .reference p{
+        text-align:center;
+        
+    }
+    .achat{
+        float: none;
+        padding: 0 25px;
+        margin-top: 50px;
+    }
+    .achat  .dec {
+        text-align: center;
+
+    }
+    .achat  .prix .dec {
+        text-align:center;
+    }
+    .achat a .dec{
+        text-align: center;
+        margin: 10px 0;
+       
+    }
+}
+/* ----------------------------------Listing vesrion ordinateur---------------------------------------- */
+.the_bloc{
+background-color: #fff;
+padding: 25px;
+margin-bottom: 25px;
+
+}
+.the_bloc>img{
+    float: left;
+    margin-top: 25px;
+}
+ .the_bloc h2{
+    text-align: initial;
+} 
+.expo img{
+    width: 287px;
+    height: 287px;
+}
+
+.the_bloc h2::after{
+    content: "";
+    display: block;
+    border-top: 1px solid rgb(150, 176, 17);
+    margin-top: -12px;
+   
+}
+
+.the_bloc h2  span {
+    background-color: white;
+   margin-left: 15px;
+}
+
+
+.expo{
+    clear: both;
+}
+/* --------------------------------------------Listing version tablette------------------------------------- */
+@media screen and (max-width: 991px) {
+    
+
+.the_bloc>img{
+    float:none;
+    display: none;
+}
+
+.the_bloc h2  span {
+    background-color: white;
+   margin-left:0;
+}
+}
